@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Refinery Simulator</title>
+
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/simulator_UI_style.css">
+
+</head>
+
+<body class="bg-dark text-light">
+
+    <div class="container mt-4">
+
+        <div class="d-flex justify-content-between align-items-center">
+
+            <h2>Refinery Simulator Dashboard</h2>
+
+            <!-- Live Status Indicator -->
+            <div id="liveStatus" class="badge bg-danger">
+                ❌ No Data
+            </div>
+
+        </div>
+
+        <div class="row mt-4">
+
+            <div class="col-md-4">
+
+                <h5>Pipeline Thickness</h5>
+
+                <div class="scroll-box" id="thicknessFeed"></div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <h5>DCS Stream</h5>
+
+                <div class="scroll-box" id="dcsFeed"></div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <h5>Lab Data</h5>
+
+                <div class="scroll-box" id="labFeed"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/static/js/Simulator_UI.js"></script>
+
+</body>
+
+</html>
